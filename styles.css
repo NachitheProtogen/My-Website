@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+}
+
+.title {
+    color: rgb(182, 255, 1);
+    font-size: large;
+}
+
+.text {
+    color: rgb(182, 255, 1);
+}
+
+.img {
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.link {
+    color: rgb(182, 255, 1);
+    display: inline;
+    margin-right: 10px;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Adjust the height as needed */
+}
+
+   /* Style for the programmable search bar */
+.gsc-search-box {
+    max-width: 1000px; /* Adjust the width as needed */
+}
+
+/* Style for the search button */
+.gsc-search-button {
+    font-size: 14px; /* Adjust the font size as needed */
+}
