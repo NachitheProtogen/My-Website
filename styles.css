@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: rgb(64, 64, 64);
 }
 
 .title {
@@ -9,6 +10,18 @@ body {
 
 .text {
     color: rgb(182, 255, 1);
+}
+
+.button {
+    background-color: rgb(182, 255, 1);
+    color: rgb(64, 64, 64);
+}
+
+.button:hover {
+    background-color: rgb(39, 128, 0);
+    font-style: italic;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .img {
