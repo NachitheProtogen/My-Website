@@ -22,6 +22,12 @@ footer {
     font-size: large;
 }
 
+.wip {
+    color: yellow;
+    font-size: larger;
+    text-align: center;
+}
+
 .text {
     color: rgb(182, 255, 1);
 }
