@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   
     let links = [
       { id: "Youtube", href: "https://www.youtube.com/channel/UC_ey0FNtdHaFJCQjSqN-wLQ", text: "Youtube" },
-      { id: "Mail", href: "https://mail.google.com/mail/u/0/#inbox", text: "Gmail" },
       { id: "Github", href: "https://github.com/NachitheProtogen", text: "Github" },
       { id: "Reddit", href: "https://www.reddit.com/user/Affectionate-Pain229", text: "Reddit" },
       { id: "Twitter", href: "https://twitter.com/Musicprotogen", text: "Twitter" },
       { id: "Discord", href: "https://discord.com/users/324313743796207641", text: "Discord" },
+      { id: "Steam", href: "https://steamcommunity.com/id/Nanachi_OwO/", text: "Steam"},
     ];
   
     links.forEach(function (linkInfo) {
