@@ -1,7 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
     background-color: rgb(64, 64, 64);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    color: rgb(182, 255, 1);
 }
 
 footer {
@@ -19,7 +25,14 @@ footer {
 
 .title {
     color: rgb(182, 255, 1);
-    font-size: large;
+    font-size: 40px;
+}
+
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #333;
 }
 
 .wip {
@@ -90,4 +103,48 @@ footer {
 .gsc-search-button {
     font-size: 14px; /* Adjust the font size as needed */
 }
+
+
+/* This is blog related only touch it if you need a new one >~< */
+
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+  }
   
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
