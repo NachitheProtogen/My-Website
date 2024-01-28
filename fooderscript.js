@@ -1,6 +1,8 @@
 //The script that will help me solve all my problems cause I can't bare to eddit 3 html files to add the same thing
 
 document.addEventListener("DOMContentLoaded", function () {
+  let br = document.createElement("br");
+
   let footer = document.createElement("footer");
   footer.className = "footer";
 
@@ -35,5 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
   footer.appendChild(footerLinksDiv);
   footer.appendChild(versionDiv);
 
+  document.body.appendChild(br)
   document.body.appendChild(footer);
 });
