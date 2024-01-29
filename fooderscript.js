@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "Twitter", icon: "fab fa-twitter", href: "https://twitter.com/Musicprotogen", text: "Twitter" },
     { id: "Discord", icon: "fab fa-discord", href: "https://discord.com/users/324313743796207641", text: "Discord" },
     { id: "Steam", icon: "fab fa-steam", href: "https://steamcommunity.com/id/Nanachi_OwO/", text: "Steam"},
+    { id: "Home", icon: "fas fa-home", href: "index.html", text: "Home" }, 
   ];
 
   links.forEach(function (linkInfo) {
@@ -37,6 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
   footer.appendChild(footerLinksDiv);
   footer.appendChild(versionDiv);
 
-  document.body.appendChild(br)
+  document.body.appendChild(br);
   document.body.appendChild(footer);
 });
