@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let link = document.createElement("p");
     link.className = "link";
     link.id = linkInfo.id;
-    link.innerHTML = '<a href="' + linkInfo.href + '" target="_blank"><i class="' + linkInfo.icon + '"></i> ' + linkInfo.text + '</a>';
+    link.innerHTML = '<a href="' + linkInfo.href + '" ><i class="' + linkInfo.icon + '"></i> ' + linkInfo.text + '</a>';
     footerLinksDiv.appendChild(link);
   });
 
