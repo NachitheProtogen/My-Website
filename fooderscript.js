@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let version = document.createElement("p");
   version.className = "version";
-  version.textContent = "Version 0.2.7";
+  version.textContent = "Version 0.2.8";
   versionDiv.appendChild(version);
 
   footer.appendChild(footerLinksDiv);
