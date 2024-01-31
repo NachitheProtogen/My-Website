@@ -120,13 +120,6 @@ footer {
     padding-left: 20px;
   }
   
-  /* Fake image */
-  .fakeimg {
-    background-color: #fff;
-    width: 100%;
-    padding: 20px;
-  }
-  
   /* Add a card effect for articles */
   .card {
     background-color: #333;
