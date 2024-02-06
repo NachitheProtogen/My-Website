@@ -23,6 +23,19 @@ footer {
     margin: 0 10px;
 }
 
+.chapterclass {
+  color: rgb(182, 255, 1);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.chapterclass:hover {
+  cursor: pointer;
+  color: rgb(39, 128, 0);
+  transition: 0.2s;
+}
+
 .title {
     color: rgb(182, 255, 1);
     font-size: 40px;
