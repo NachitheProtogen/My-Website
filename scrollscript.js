@@ -4,6 +4,7 @@ let chapter3 = document.getElementById("chapter3");
 let chapter4 = document.getElementById("chapter4");
 let chapter5 = document.getElementById("chapter5");
 let chapter6 = document.getElementById("chapter6");
+let chapter7 = document.getElementById("chapter7");
 // :3
 let chapter1target = document.getElementById("chapter1target");
 let chapter2target = document.getElementById("chapter2target");
@@ -11,6 +12,8 @@ let chapter3target = document.getElementById("chapter3target");
 let chapter4target = document.getElementById("chapter4target");
 let chapter5target = document.getElementById("chapter5target");
 let chapter6target = document.getElementById("chapter6target");
+let chapter7target = document.getElementById("chapter7target");
+
 //This sript is so fucking uglyyyyy
 chapter1.addEventListener("click", () => {
     chapter1target.scrollIntoView({behavior: "smooth"})
@@ -34,4 +37,8 @@ chapter5.addEventListener("click", () => {
 
 chapter6.addEventListener("click", () => {
     chapter6target.scrollIntoView({behavior: "smooth"})
+});
+
+chapter7.addEventListener("click", () => {
+    chapter7target.scrollIntoView({behavior: "smooth"})
 });
