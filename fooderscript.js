@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let version = document.createElement("p");
   version.className = "version";
-  version.textContent = "Version 1.0.5";
+  version.textContent = "Version 1.1.0";
   versionDiv.appendChild(version);
 
   let clock = document.createElement("div");
