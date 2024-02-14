@@ -35,8 +35,28 @@ document.addEventListener("DOMContentLoaded", function () {
   version.textContent = "Version 1.0.4";
   versionDiv.appendChild(version);
 
+  let clock = document.createElement("div");
+  clock.className = "clock";
+  clock.id = "clock";
+
+  function updateClock() {
+    const localTime = new Date();
+
+    const targetTimezone = "Europe/Berlin";
+    const options = { timeZone: targetTimezone };
+    const targetTime = localTime.toLocaleTimeString('en-US', options);
+
+    clock.textContent = `Current time for me: ${targetTime}`;
+  };
+
+  setInterval(updateClock, 1000);
+
+  updateClock();
+
+
   footer.appendChild(footerLinksDiv);
   footer.appendChild(versionDiv);
+  footer.appendChild(clock);
 
   document.body.appendChild(br);
   document.body.appendChild(footer);
