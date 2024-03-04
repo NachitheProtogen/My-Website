@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
           header.style.top = "0";
       } else {
           // Scrolling down
-          header.style.top = "-60px"; // Adjust according to your header height
+          header.style.top = "-60px"; 
       }
 
       prevScrollPos = currentScrollPos;
