@@ -1,268 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-    <link
-      rel="icon"
-      href="Media/30.12_-_shadow_nachi_animation.gif"
-      type="image/icon"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="preplacescript.js"></script>
-    <script
-      src="https://kit.fontawesome.com/056054553f.js"
-      crossorigin="anonymous"
-    ></script>
-    <a
-      href="https://github.com/NachitheProtogen/My-Website"
-      class="github-corner"
-      aria-label="View source on GitHub"
-      ><svg
-        width="80"
-        height="80"
-        viewBox="0 0 250 250"
-        style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <link rel="icon" href="Media/30.12_-_shadow_nachi_animation.gif" type="image/icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="preplacescript.js"></script>
+  <script src="https://kit.fontawesome.com/056054553f.js" crossorigin="anonymous"></script>
+  <a href="https://github.com/NachitheProtogen/My-Website" class="github-corner" aria-label="View source on GitHub"><svg
+      width="80" height="80" viewBox="0 0 250 250" style="
           fill: #151513;
           color: #fff;
           position: absolute;
           top: 0;
           border: 0;
           right: 0;
-        "
-        aria-hidden="true"
-      >
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path
-          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-          fill="currentColor"
-          style="transform-origin: 130px 106px"
-          class="octo-arm"
-        ></path>
-        <path
-          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-          fill="currentColor"
-          class="octo-body"
-        ></path></svg>
+        " aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg>
     ></a>
-    <style>
+  <style>
+    .github-corner:hover .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+    }
+
+    @keyframes octocat-wave {
+
+      0%,
+      100% {
+        transform: rotate(0);
+      }
+
+      20%,
+      60% {
+        transform: rotate(-25deg);
+      }
+
+      40%,
+      80% {
+        transform: rotate(10deg);
+      }
+    }
+
+    @media (max-width: 500px) {
       .github-corner:hover .octo-arm {
+        animation: none;
+      }
+
+      .github-corner .octo-arm {
         animation: octocat-wave 560ms ease-in-out;
       }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2 class="title">Nachi's Blog</h2>
+  </div>
+  <br />
 
-      @keyframes octocat-wave {
-        0%,
-        100% {
-          transform: rotate(0);
-        }
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card"> <!--Just sad news-->
+        <h2 class="title">Just sad news</h2>
+        <h5>My dog passed away | Mar 7, 2024</h5>
+        <p class="text">Hello again, it has been a while. </p>
+        <p>I am writing this out of grieve and pain since, very recently, on the 29th of February, my 11,5-year-old dog
+          Strolchi died...
+          This hit me really hard, and it's still bothering me now.
+          My entire family is currently dealing with a lot of issues, and this was just the cherry on top, and I am not
+          sure if I want to write much about it. I will just share some images of him and hope that he may rest in
+          peace. <3</p>
+          <img src="Media/Strolchi/20180713_163131.jpg" width="300" height="225" style="display: inline-block;">
+          <img src="Media/Strolchi/20231005_143916.jpg" width="400" height="225" style="display: inline-block;">
+          <img src="Media/Strolchi/20231005_143950.jpg" width="400" height="225" style="display: inline-block;">
+          <img src="Media/Strolchi/20240203_101953.jpg" width="225" height="400" style="display: inline-block;"> 
+          <img src="Media/Strolchi/IMG-20190428-WA0002.jpg" width="225" height="400" style="display: inline-block;">
+      </div>
+      <div class="card"> <!--The last few day's have been rough-->
+        <h2 class="title">Last few day's have been rough</h2>
+        <h5>Update on the last few weeks | Feb 19, 2024</h5>
+        <p class="text">Hey there,</p>
+        <br />
 
-        20%,
-        60% {
-          transform: rotate(-25deg);
-        }
-
-        40%,
-        80% {
-          transform: rotate(10deg);
-        }
-      }
-
-      @media (max-width: 500px) {
-        .github-corner:hover .octo-arm {
-          animation: none;
-        }
-
-        .github-corner .octo-arm {
-          animation: octocat-wave 560ms ease-in-out;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="header">
-      <h2 class="title">Nachi's Blog</h2>
-    </div>
-    <br />
-
-    <div class="row">
-      <div class="leftcolumn">
-        <div class="card"> <!--The last few day's have been rough-->
-          <h2 class="title">Last few day's have been rough</h2>
-          <h5>Update on the last few weeks | Feb 19, 2024</h5>
-          <p class="text">Hey there,</p>
-          <br />
-
-          <p>
-            I decided that I would be writing a blog again since I don't have
-            that many ideas for my story and life is going kinda crazy, so I
-            will just use this as an outlet. So about the story first, since
-            it's kinda my main objective rn. I had one moment a few days ago
-            where I got a bunch of plot ideas and even commissioned a piece for
-            the story. Then I was writing it and I only got the motivation for
-            it because I was in college. I have a bunch of problems with my
-            college, especially what we learn and how we learn it. We do a lot
-            of general knowledge have German, Math and English subjects, while
-            all our IT subjects are taught by the same person. The issue with
-            that is that my general interest lies in IT and It is not educated
-            enough for me. So I just start to code in ltr any other class or
-            write started or something like that. I learn most of my coding
-            knowledge at home and through passion, my college only gave me
-            motivation to start, and I am not sure how much this is worth.
-          </p>
-          <br />
-          <p>
-            My mom also suddenly broke her right arm, which just screws with
-            taking care of my hobbies. Because I would have to take care of her
-            and most of the chores she did, aka cooking, etc... It's exhausting
-            and tiring, and it makes me feel less motivated to go after these
-            hobbies, and it kinda upsets me... like a lot. One of the few good
-            things that happened was that I reconnected with a bunch of old
-            friends and a few new ones that stick with me, which I really
-            appreciate :3
-          </p>
-          <br />
-          <p>
-            One factor that also fucks with me is my habit of impulsive
-            purchases. I have a history of buying things impulsively discarding
-            what I have on my account and since this is my birthday month, it
-            happened a lot more than usual. I sometimes buy games without
-            thinking about it, items to not get into an awkward situation in a
-            market or just buy them because I just can. This is still giving me
-            trouble, especially when thinking about how much money I spend on
-            games, like, where I stick with one game and just buy stuff for the
-            sake of buying it, since I have played the game for ages anyway.
-            It's horrible for me to think about, but I guess I can be happy that
-            nothing bad has happened yet.
-          </p>
-          <br />
-          <p>
-            This is just a small update for me. I felt like writing about this
-            again because of a talk I had with one of my friends about my issues
-            and I think I might as well use my website as a place for it. I will
-            try my best to go positively through these times and, as a shoutout
-            to one of my friends, I want to offer it to Microwave :3 Hello!
-            Anyway, I will see you reader whenever
-          </p>
-          <br />
-          <p>Cheers <3</p>
-        </div>
-        <div class="card"> <!--Alright 1.0.0 is finaly done-->
-          <h2 class="title">1.0.0 Is finaly done</h2>
-          <h5>1.0.0 is done so I will give out an update for you | Feb 1, 2024</h5>
-          <p>
-            Alright, 1.0.0 Is done and with that, the website is now hosted
-            under https://shadow-nachi.de. With that, this is now the project I
-            invested in the most. Not really money but general effort and
-            passion. I enjoy working with HTML more than I thought and it is
-            generally fun to see people enjoying the website and sharing
-            feedback with me. Seeing people enjoy the lore of my Character and
-            the Art that was made of him is some of the most heartwarming
-            feelings I have gotten with him. With that, most of my focus is now
-            set on continuing Nachi's story since I am pretty much out of Ideas
-            on what to add here so far. There is not gonna be much traffic on
-            this site since it is nothing too interesting if you don't already
-            know me but if anyone does stumble upon this website consider
-            telling me about it on any of my socials :D.
-          </p>
-          <br />
-          <br />
-          <p class="text">
-            Otherwise, my life is going pretty well right now. I have gotten my
-            midways with a 2.6 which in Germany is pretty decent. My birthday is
-            in 2 days on the 3rd which is going to be exciting and I got paid
-            which means I can continue my Bad Financial decisions and buy a
-            worrying amount of art X3. With IT my College is not teaching me
-            many new things. Usually, I work on this website in class since I am
-            doing pretty decent anyway so that is all that is for lol.
-          </p>
-          <br />
-          <br />
-          <p class="text">
-            Not sure if I am good at blogging but that is it for me for now. And
-            since this is the second blog I will incorporate an Idea I had which
-            is to call out one of my Friends whenever I write a Blog. So I hope
-            you read this Snowy, even if you are way more than a friend this is
-            a callout for you!
-          </p>
-          <p class="text">So I will see y'all whenever</p>
-          <br />
-          <br />
-          <p class="text">Take care.</p>
-        </div>
-        <div class="card"> <!--First Blog-->
-          <h2>The first Blog!!!</h2>
-          <h5>Blog for testing purposes | Jan 27, 2024</h5>
-          <p>
-            This one is mostly for testing purposes but I do plan on posting
-            here at least once a month or at least trying to. Anyways I will
-            make a little introduction here since I might as well right? My name
-            on the Internet is Nachi or Shadow_Nachi or Nachi the Protogen
-            really depends on where you find me. I do not plan on using my real
-            name on this website or anything related with my Protogen identity
-            on here. I already know that my classmates will find it since I am
-            not really hiding it or anything so I will say hi to you guys :D but
-            that is really it. Otherwise I am really open to hear about
-            improvements I could make to this considering I am really new to
-            Blogging + the website thingy ++ Story telling I would really
-            appreciate some feedback
-          </p>
-          <br />
-          <p>
-            So first things first I wanna improve on the artcorner since I have
-            not put much work into it yet. I am also in discord about if I
-            should put art of my older Sonas into it since... it's not great.
-            Otherwise most of my art is made by one person (Hi Dex :3) So there
-            isn't much diffrent stuff to share. But I do got some pices so I
-            might as well share the newer ones first and see where we go from
-            here. Another thing is that my Birthday is very soon on the 3rd of
-            February so I am excited for that. Mostly since it's my 18th
-            birthday so a lot of doors open for me. I will gain more freedom for
-            myself and with that I am excited for what that brings me. Otherwise
-            Programming is my focus. I know I should continue on leraning C# but
-            I am just stuck with web development and Node for now. But that is
-            enought from me for this blockpost. I wanna push this version out
-            before going to bed and it's 20:38 right now. So for the 2 people
-            that read this if you have any ideas on improving this website just
-            hit me up on discord I would highly appreciate it. You can find it
-            in the fooder of the website. Soo I will see y'all when I got
-            another big update :3
-          </p>
-          <br />
-          <p><3</p>
-        </div>
-        <!--     <div class="card">
+        <p>
+          I decided that I would be writing a blog again since I don't have
+          that many ideas for my story and life is going kinda crazy, so I
+          will just use this as an outlet. So about the story first, since
+          it's kinda my main objective rn. I had one moment a few days ago
+          where I got a bunch of plot ideas and even commissioned a piece for
+          the story. Then I was writing it and I only got the motivation for
+          it because I was in college. I have a bunch of problems with my
+          college, especially what we learn and how we learn it. We do a lot
+          of general knowledge have German, Math and English subjects, while
+          all our IT subjects are taught by the same person. The issue with
+          that is that my general interest lies in IT and It is not educated
+          enough for me. So I just start to code in ltr any other class or
+          write started or something like that. I learn most of my coding
+          knowledge at home and through passion, my college only gave me
+          motivation to start, and I am not sure how much this is worth.
+        </p>
+        <br />
+        <p>
+          My mom also suddenly broke her right arm, which just screws with
+          taking care of my hobbies. Because I would have to take care of her
+          and most of the chores she did, aka cooking, etc... It's exhausting
+          and tiring, and it makes me feel less motivated to go after these
+          hobbies, and it kinda upsets me... like a lot. One of the few good
+          things that happened was that I reconnected with a bunch of old
+          friends and a few new ones that stick with me, which I really
+          appreciate :3
+        </p>
+        <br />
+        <p>
+          One factor that also fucks with me is my habit of impulsive
+          purchases. I have a history of buying things impulsively discarding
+          what I have on my account and since this is my birthday month, it
+          happened a lot more than usual. I sometimes buy games without
+          thinking about it, items to not get into an awkward situation in a
+          market or just buy them because I just can. This is still giving me
+          trouble, especially when thinking about how much money I spend on
+          games, like, where I stick with one game and just buy stuff for the
+          sake of buying it, since I have played the game for ages anyway.
+          It's horrible for me to think about, but I guess I can be happy that
+          nothing bad has happened yet.
+        </p>
+        <br />
+        <p>
+          This is just a small update for me. I felt like writing about this
+          again because of a talk I had with one of my friends about my issues
+          and I think I might as well use my website as a place for it. I will
+          try my best to go positively through these times and, as a shoutout
+          to one of my friends, I want to offer it to Microwave :3 Hello!
+          Anyway, I will see you reader whenever
+        </p>
+        <br />
+        <p>Cheers <3</p>
+      </div>
+      <div class="card"> <!--Alright 1.0.0 is finaly done-->
+        <h2 class="title">1.0.0 Is finaly done</h2>
+        <h5>1.0.0 is done so I will give out an update for you | Feb 1, 2024</h5>
+        <p>
+          Alright, 1.0.0 Is done and with that, the website is now hosted
+          under https://shadow-nachi.de. With that, this is now the project I
+          invested in the most. Not really money but general effort and
+          passion. I enjoy working with HTML more than I thought and it is
+          generally fun to see people enjoying the website and sharing
+          feedback with me. Seeing people enjoy the lore of my Character and
+          the Art that was made of him is some of the most heartwarming
+          feelings I have gotten with him. With that, most of my focus is now
+          set on continuing Nachi's story since I am pretty much out of Ideas
+          on what to add here so far. There is not gonna be much traffic on
+          this site since it is nothing too interesting if you don't already
+          know me but if anyone does stumble upon this website consider
+          telling me about it on any of my socials :D.
+        </p>
+        <br />
+        <br />
+        <p class="text">
+          Otherwise, my life is going pretty well right now. I have gotten my
+          midways with a 2.6 which in Germany is pretty decent. My birthday is
+          in 2 days on the 3rd which is going to be exciting and I got paid
+          which means I can continue my Bad Financial decisions and buy a
+          worrying amount of art X3. With IT my College is not teaching me
+          many new things. Usually, I work on this website in class since I am
+          doing pretty decent anyway so that is all that is for lol.
+        </p>
+        <br />
+        <br />
+        <p class="text">
+          Not sure if I am good at blogging but that is it for me for now. And
+          since this is the second blog I will incorporate an Idea I had which
+          is to call out one of my Friends whenever I write a Blog. So I hope
+          you read this Snowy, even if you are way more than a friend this is
+          a callout for you!
+        </p>
+        <p class="text">So I will see y'all whenever</p>
+        <br />
+        <br />
+        <p class="text">Take care.</p>
+      </div>
+      <div class="card"> <!--First Blog-->
+        <h2>The first Blog!!!</h2>
+        <h5>Blog for testing purposes | Jan 27, 2024</h5>
+        <p>
+          This one is mostly for testing purposes but I do plan on posting
+          here at least once a month or at least trying to. Anyways I will
+          make a little introduction here since I might as well right? My name
+          on the Internet is Nachi or Shadow_Nachi or Nachi the Protogen
+          really depends on where you find me. I do not plan on using my real
+          name on this website or anything related with my Protogen identity
+          on here. I already know that my classmates will find it since I am
+          not really hiding it or anything so I will say hi to you guys :D but
+          that is really it. Otherwise I am really open to hear about
+          improvements I could make to this considering I am really new to
+          Blogging + the website thingy ++ Story telling I would really
+          appreciate some feedback
+        </p>
+        <br />
+        <p>
+          So first things first I wanna improve on the artcorner since I have
+          not put much work into it yet. I am also in discord about if I
+          should put art of my older Sonas into it since... it's not great.
+          Otherwise most of my art is made by one person (Hi Dex :3) So there
+          isn't much diffrent stuff to share. But I do got some pices so I
+          might as well share the newer ones first and see where we go from
+          here. Another thing is that my Birthday is very soon on the 3rd of
+          February so I am excited for that. Mostly since it's my 18th
+          birthday so a lot of doors open for me. I will gain more freedom for
+          myself and with that I am excited for what that brings me. Otherwise
+          Programming is my focus. I know I should continue on leraning C# but
+          I am just stuck with web development and Node for now. But that is
+          enought from me for this blockpost. I wanna push this version out
+          before going to bed and it's 20:38 right now. So for the 2 people
+          that read this if you have any ideas on improving this website just
+          hit me up on discord I would highly appreciate it. You can find it
+          in the fooder of the website. Soo I will see y'all when I got
+          another big update :3
+        </p>
+        <br />
+        <p>
+          <3</p>
+      </div>
+      <!--     <div class="card">
         <h2>TITLE HEADING</h2>
         <h5>Title description, Sep 2, 2017</h5>
         <p>Some text..</p>
       </div>
     -->
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <img src="Media/30.12_-_shadow_nachi_animation.gif" height="200" width="200" />
+        <p>
+          My Name is Nachi and I am a German Programmer, I mostly introduced
+          myself on the mainpage so I won't do that here :D
+        </p>
       </div>
-      <div class="rightcolumn">
-        <div class="card">
-          <h2>About Me</h2>
-          <img
-            src="Media/30.12_-_shadow_nachi_animation.gif"
-            height="200"
-            width="200"
-          />
-          <p>
-            My Name is Nachi and I am a German Programmer, I mostly introduced
-            myself on the mainpage so I won't do that here :D
-          </p>
-        </div>
-        <div class="card">
-          <h3>Favorite Post so far</h3>
-          <p class="text">Nothing yet</p>
-        </div>
-        <div class="card">
-          <h3>Current position</h3>
-          <p>Student</p>
-        </div>
+      <div class="card">
+        <h3>Favorite Post so far</h3>
+        <p class="text">Nothing yet</p>
+      </div>
+      <div class="card">
+        <h3>Current position</h3>
+        <p>Student</p>
       </div>
     </div>
-    <br />
-    <br />
-  </body>
+  </div>
+  <br />
+  <br />
+</body>
 </html>
