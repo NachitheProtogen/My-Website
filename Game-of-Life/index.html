@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="preplacescript.js"></script>
+    <script src="https://kit.fontawesome.com/056054553f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="card">
+            <h1 class="title">Conway's Game of Life</h1>
+            <p class="text">Programmed by Nachi</p>
+        </div> <div class="card">
+            <button class="button" id="play"> <i class="fas fa-play"></i></button>
+            <button class="button" id="pause"> <i class="fas fa-pause"></i></button>
+            <button class="button" id="reload"> <i class="fas fa-refresh"></i></button>
+            <input class="input" id="swiftness" type="number" style="width: 4%; display: inline-block;">
+            <p class="text" style="display: inline-block;"><-Speed in ms</p>
+        </div>
+        <div class="card">
+            <div class="canvas" id="canvas"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
