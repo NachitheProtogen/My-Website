@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     header.className = "headerclass"
     
     let headerInfo = [
-      {id: "Headline", href: "index.html", text: "Nachi's website"},
-      {id: "Story", href: "story.html", text: "Story"},
-      {id: "Blog", href: "blog.html", text: "Blog"},
-      {id: "Artcorner", href: "Artcorner.html", text: "Artcorner"},
-      {id: "Nachi the Protogen", href: "Nachi.html", text: "Nachi the Protogen"},
+      {id: "Headline", href: "https://shadow-nachi.de", text: "Nachi's website"},
+      {id: "Story", href: "https://shadow-nachi.de/story.html", text: "Story"},
+      {id: "Blog", href: "https://shadow-nachi.de/blog.html", text: "Blog"},
+      {id: "Artcorner", href: "https://shadow-nachi.de/artcorner.html", text: "Artcorner"},
+      {id: "Nachi the Protogen", href: "https://shadow-nachi.de/nachi.html", text: "Nachi the Protogen"},
     ];
     
     headerInfo.forEach(function(headerInfoP){
