@@ -98,10 +98,9 @@ document.addEventListener("DOMContentLoaded", function() {
               header.style.top = "0";
           } else {
               // Scrolling down
-              header.style.top = "-60px"; 
+              header.style.top = "-100px"; 
           }
     
           prevScrollPos = currentScrollPos;
       };
-    });
-    
+});

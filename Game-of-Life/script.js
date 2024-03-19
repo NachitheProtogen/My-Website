@@ -123,3 +123,16 @@ reload.addEventListener("click", () => {
 })
 
 createEmptyGrid(rows, cols);
+
+let rulesSwitch = true;
+
+CellRules.addEventListener("click", () => {
+
+  if (rulesSwitch) {
+    CellRules.style.top = "-350px";
+    rulesSwitch =!rulesSwitch;
+  } else {
+    CellRules.style.top = "0px";
+    rulesSwitch = !rulesSwitch;
+  }
+});
