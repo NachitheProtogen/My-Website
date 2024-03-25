@@ -8,7 +8,7 @@ function countAliveNeighbors(cellInp) {
   cellInp.neighbors = 0;
 
   cells.forEach(cell => {
-    if(cell.x == cellInp.x -1 && cell.y == cellInp.y -1){
+    if(cell.x == cellInp.x -1 && cell.y == cellInp.y -1){ //Clusterfuck the programm
       
       if(cell.style.backgroundColor == "black"){
       cellInp.neighbors++;
