@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="preplacescript.js"></script>
+    <script src="https://kit.fontawesome.com/056054553f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="card">
+        <h1 class="title">Paint or the attempt of it</h1>
+        <p class="credit">Programmed by Nachi</p>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+    <div class="card">
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+    </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <p class="text">Toolbar</p>
+            <input type="color" id="colorpicker">
+            <input type="range" id="thick" max="100" min="1" value="1">
+            <br>
+            <button class="button" id="lines"><i class="fas fa-line-chart"></i></button>
+            <button class="button" id="pencil"><i class="fas fa-pencil"></i></button>
+            <button class="button" id="eraser"><i class="fas fa-eraser"></i></button>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
