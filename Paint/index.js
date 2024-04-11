@@ -22,15 +22,28 @@ colorpicker.addEventListener("input", (e) => {
 
 lines.addEventListener("click", () => {
     settings = [true, false, false, false, false];
+    color = precol;
+    colorpicker.value = precol
+    thickness = prethic;
+    thick.value = prethic
 });
 
 pencil.addEventListener("click", () => {
     settings = [false, true, false, false, false];
+    color = precol;
+    colorpicker.value = precol
+    thickness = prethic;
+    thick.value = prethic
 });
+
+let precol = color;
+let prethic = thickness;
 
 eraser.addEventListener("click", () => {
     settings = [false, false, false, false, true];
-    
+    precol = color;
+    prethic = thickness;
+
     colorpicker.value = "#FFFFFF";
     thickness = 20;
     thick.value = 20;
