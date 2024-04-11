@@ -30,6 +30,10 @@ pencil.addEventListener("click", () => {
 
 eraser.addEventListener("click", () => {
     settings = [false, false, false, false, true];
+    
+    colorpicker.value = "#FFFFFF";
+    thickness = 20;
+    thick.value = 20;
 });
 
 thick.addEventListener("input", () => {
