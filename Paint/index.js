@@ -53,6 +53,61 @@ thick.addEventListener("input", () => {
     thickness = thick.value;
 });
 
+let piccount = 1;
+
+function picsize(IncOrDec) {
+    switch (piccount) {
+        case 0:
+            if (IncOrDec==="+") {
+                myCanvas.width = 500;
+                myCanvas.height = 500;
+                piccount = 1;
+            } else if(IncOrDec==="-"){
+                return;
+            }
+            break;
+        case 1:
+            if (IncOrDec==="+") {
+                myCanvas.width = 800;
+                myCanvas.height = 600; 
+                piccount = 2;
+            } else if(IncOrDec==="-"){
+                myCanvas.width = 300;
+                myCanvas,height = 300;
+                piccount = 0;
+            }
+            break;
+        case 2:
+            if (IncOrDec==="+") {
+                myCanvas.width = 1000;
+                myCanvas.height = 800;
+                piccount = 3;
+            } else if(IncOrDec==="-"){
+                myCanvas.width = 500;
+                myCanvas.height = 500;
+                piccount = 1;
+            }
+            break;
+        case 3:
+            if (IncOrDec==="+") {
+                return;
+            } else if(IncOrDec==="-"){
+                myCanvas.width = 800;
+                myCanvas. height = 600;
+                piccount = 2;
+            }
+            break;
+    }
+}
+
+incpic.addEventListener("click", () => {
+    picsize("+")
+})
+
+decpic.addEventListener("click", () => {
+    picsize("-")
+})
+
 myCanvas.addEventListener("mousedown", (e) => {
     startPoint = { x: e.offsetX, y: e.offsetY };
     if (settings[1] === true || settings[4] === true) {
