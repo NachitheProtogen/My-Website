@@ -115,10 +115,12 @@ function picsize(IncOrDec) {
 
 incpic.addEventListener("click", () => {
     picsize("+")
+    drawElements(drawnElements);
 })
 
 decpic.addEventListener("click", () => {
     picsize("-")
+    drawElements(drawnElements);
 })
 
 clear.addEventListener("click", () => {
