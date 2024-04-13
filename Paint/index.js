@@ -14,6 +14,19 @@ let settings = [
     false, // eraser
 ];
 
+let colors = [
+    {name:"red", value:"#FF0000"},
+    {name:"blue", value:"#0000FF"},
+    {name:"green", value:"#008000"},
+    {name:"greenyellow", value:"#adff2f"},
+    {name:"yellow", value:"#FFFF00"},
+    {name:"orange", value:"#ffa500"},
+    {name:"purple", value:"#800080"},
+    {name:"pink", value:"#ff69b4"},
+    {name:"black", value:"#000000"},
+    {name:"white", value:"#FFFFFF"},
+];
+
 let drawnElements = []; // Store drawn elements separately
 
 colorpicker.addEventListener("input", (e) => {
@@ -108,6 +121,13 @@ decpic.addEventListener("click", () => {
     picsize("-")
 })
 
+clear.addEventListener("click", () => {
+    drawnElements = [];
+    ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+    piccount = 0
+    picsize("+");
+});
+
 myCanvas.addEventListener("mousedown", (e) => {
     startPoint = { x: e.offsetX, y: e.offsetY };
     if (settings[1] === true || settings[4] === true) {
@@ -163,3 +183,20 @@ function drawElements(elements) {
         ctx.stroke();
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    colors.forEach( function(colorfun) {
+        let btn = document.createElement("button");
+        btn.id = colorfun.name;
+        btn.className = "button";
+        btn.style = `background-color: ${colorfun.value}; height: 15px;`;
+        btn.value = colorfun.value;
+        btn.addEventListener("click", () => {
+            colorpicker.value = btn.value;
+            color = btn.value;
+            precol = btn.value;
+        });
+        
+        colordiv.appendChild(btn);
+    })
+})
