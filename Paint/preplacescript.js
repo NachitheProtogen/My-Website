@@ -6,11 +6,11 @@ header.id = "myHeader";
 header.className = "headerclass"
 
 let headerInfo = [
-  {id: "Headline", href: "index.html", text: "Nachi's website"},
-  {id: "Story", href: "story.html", text: "Story"},
-  {id: "Blog", href: "blog.html", text: "Blog"},
-  {id: "Artcorner", href: "Artcorner.html", text: "Artcorner"},
-  {id: "Nachi the Protogen", href: "Nachi.html", text: "Nachi the Protogen"},
+  {id: "Headline", href: "https://shadow-nachi.de/index.html", text: "Nachi's website"},
+  {id: "Story", href: "https://shadow-nachi.de/story.html", text: "Story"},
+  {id: "Blog", href: "https://shadow-nachi.de/blog.html", text: "Blog"},
+  {id: "Artcorner", href: "https://shadow-nachi.de/Artcorner.html", text: "Artcorner"},
+  {id: "Nachi the Protogen", href: "https://shadow-nachi.de/Nachi.html", text: "Nachi the Protogen"},
 ];
 
 headerInfo.forEach(function(headerInfoP){
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "Twitter", icon: "fab fa-twitter", href: "https://twitter.com/Musicprotogen", text: "Twitter" },
     { id: "Discord", icon: "fab fa-discord", href: "https://discord.com/users/324313743796207641", text: "Discord" },
     { id: "Steam", icon: "fab fa-steam", href: "https://steamcommunity.com/id/Nanachi_OwO/", text: "Steam"},
-    { id: "Home", icon: "fas fa-home", href: "index.html", text: "Home" }, 
+    { id: "Home", icon: "fas fa-home", href: "https://shadow-nachi.de", text: "Home" }, 
   ];
   
   links.forEach(function (linkInfo) {
