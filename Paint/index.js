@@ -7,8 +7,8 @@ let isDrawing = false;
 let startPoint = { x: 0, y: 0 };
 
 let settings = [
-    true,  // line
-    false, // pencil
+    false,  // line
+    true, // pencil
     false, // box
     false, // circle
     false, // eraser
@@ -127,6 +127,23 @@ clear.addEventListener("click", () => {
     piccount = 0
     picsize("+");
 });
+
+downloadbtn.addEventListener("click", () => {
+    downloadcanvasimg();
+})
+
+function downloadcanvasimg() {
+    let image = myCanvas.toDataURL("image/png")
+    let link = document.createElement('a');
+    link.download = 'canvas_image.png'; // Set the download attribute with desired file name
+    link.href = image;
+
+    canvasdiv.appendChild(link);
+
+    link.click();
+
+    canvasdiv.removeChild(link);
+};
 
 myCanvas.addEventListener("mousedown", (e) => {
     startPoint = { x: e.offsetX, y: e.offsetY };
