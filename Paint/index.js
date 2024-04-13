@@ -181,6 +181,38 @@ myCanvas.addEventListener("mouseup", (e) => {
     }
 });
 
+myCanvas.addEventListener("touchstart", (e) => {
+    e.preventDefault(); // Prevent default touch behavior (like scrolling)
+    startPoint = { x: e.touches[0].clientX - myCanvas.getBoundingClientRect().left, y: e.touches[0].clientY - myCanvas.getBoundingClientRect().top };
+    if (settings[1] === true || settings[4] === true) {
+        isDrawing = true;
+        if (settings[4] === true) {
+            color = '#FFFFFF'; // Set color to white for eraser
+        }
+        drawnElements.push({ type: settings[1] === true ? 'pencil' : 'eraser', points: [startPoint], color: color, thickness: thickness });
+    }
+});
+
+myCanvas.addEventListener("touchmove", (e) => {
+    e.preventDefault(); // Prevent default touch behavior (like scrolling)
+    if (!isDrawing) {
+        return;
+    }
+    if (settings[1] === true || settings[4] === true) { // Pencil or eraser mode
+        const currentPoint = { x: e.touches[0].clientX - myCanvas.getBoundingClientRect().left, y: e.touches[0].clientY - myCanvas.getBoundingClientRect().top };
+        drawnElements[drawnElements.length - 1].points.push(currentPoint); // Update the points for the current line
+        drawElements(drawnElements); // Redraw canvas with stored elements
+        startPoint = currentPoint;
+    }
+});
+
+myCanvas.addEventListener("touchend", (e) => {
+    if (settings[1] === true || settings[4] === true) {
+        isDrawing = false;
+    }
+    // No touch-specific functionality needed for drawing lines
+});
+
 function drawElements(elements) {
     ctx.clearRect(0, 0, myCanvas.width, myCanvas.height); // Clear canvas
     elements.forEach(element => {
