@@ -282,9 +282,9 @@ document.addEventListener("DOMContentLoaded", () => {
         colordiv.appendChild(btn);
     })
     if (userIsOnMobileDevice) {
-        piccount = 0;
         myCanvas.width = 300;
         myCanvas.height = 500;
+        piccount = 0;
     }
 })
 
