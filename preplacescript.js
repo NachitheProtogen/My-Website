@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (userIsOnMobileDevice) {
         if (prevScrollPos > currentScrollPos) {
           // Scrolling up
-          header.style.top = "0";
+          header.style.top = "40";
       } else {
           // Scrolling down
           header.style.top = "-160px"; 
