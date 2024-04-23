@@ -107,7 +107,7 @@ function picsize(IncOrDec) {
                 piccount = 2;
             } else if(IncOrDec==="-"){
                 myCanvas.width = 300;
-                myCanvas,height = 300;
+                myCanvas.height = 500;
                 piccount = 0;
             }
             break;
@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (userIsOnMobileDevice) {
         piccount = 0;
         myCanvas.width = 300;
-        myCanvas.height = 300;
+        myCanvas.height = 500;
     }
 })
 
