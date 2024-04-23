@@ -46,7 +46,7 @@ pencil.addEventListener("click", () => {
     color = precol;
     colorpicker.value = precol
     thickness = prethic;
-    thick.value = prethic
+    thick.value = prethic;
 });
 
 let precol = color;
@@ -61,6 +61,22 @@ eraser.addEventListener("click", () => {
     thickness = 20;
     thick.value = 20;
 });
+
+square.addEventListener("click", () => {
+    settings = [false,false,true,false,false];
+    color = precol;
+    colorpicker.value = precol;
+    thickness = prethic;
+    thick.value = prethic;
+})
+
+circle.addEventListener("click", () => {
+    settings = [false,false,false,true,false];
+    color = precol;
+    colorpicker.value = precol;
+    thickness = prethic;
+    thick.value = prethic;
+})
 
 thick.addEventListener("input", () => {
     thickness = thick.value;
@@ -156,6 +172,9 @@ myCanvas.addEventListener("mousedown", (e) => {
         }
         drawnElements.push({ type: settings[1] === true ? 'pencil' : 'eraser', points: [startPoint], color: color, thickness: thickness });
     }
+    if (settings[2] === true){
+        drawnElements.push({ type: settings[2] , points: [startPoint], color: color, thickness: thickness });
+    }
 });
 
 myCanvas.addEventListener("mousemove", (e) => {
@@ -178,6 +197,11 @@ myCanvas.addEventListener("mouseup", (e) => {
         const endPoint = { x: e.offsetX, y: e.offsetY };
         drawnElements.push({ type: 'line', start: startPoint, end: endPoint, color: color, thickness: thickness });
         drawElements(drawnElements); // Redraw canvas with stored elements
+    }
+    if (settings[2] === true) {
+        const endPoint = {x: e.offsetX, y: e.offsetY};
+        drawnElements.push({ type: "box", start: startPoint, end: endPoint, color: color, thickness: thickness });
+        drawElements(drawnElements);
     }
 });
 
@@ -228,6 +252,8 @@ function drawElements(elements) {
                     ctx.lineTo(points[i].x, points[i].y);
                 }
             }
+        } else if (element.type === "box") {
+            ctx.rect(element.start.x, element.start.y, element.end.x - element.start.x, element.end.y - element.start.y);
         }
         ctx.lineWidth = element.thickness;
         ctx.strokeStyle = element.color;
