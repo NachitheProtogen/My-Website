@@ -1,5 +1,10 @@
 const ctx = myCanvas.getContext("2d");
 
+let userAgent = navigator.userAgent.toLowerCase(),
+ width = screen.availWidth,
+ height = screen.availHeight,
+userIsOnMobileDevice = checkIfUserIsOnMobileDevice(userAgent);
+
 let color = "#000000";
 let thickness = 1;
 
@@ -276,4 +281,26 @@ document.addEventListener("DOMContentLoaded", () => {
         
         colordiv.appendChild(btn);
     })
+    if (userIsOnMobileDevice) {
+        piccount = 0;
+        myCanvas.width = 300;
+        myCanvas.height = 300;
+    }
 })
+
+function checkIfUserIsOnMobileDevice($userAgent) {
+    if($userAgent.includes("mobi") || $userAgent.includes("tablet")){
+       return true;
+    }
+    if($userAgent.includes("android")) {
+       if(height > width && width < 800) {
+          // Screen is higher than it’s wide, so we have portrait mode
+          return true;
+       }
+       if(width > height && height < 800) {
+          // Screen is wider than it’s high, so we have landscape mode
+          return true;
+       }
+    }
+    return false;
+ }
