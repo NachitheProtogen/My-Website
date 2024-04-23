@@ -1,8 +1,8 @@
 //The script that will help me solve all my problems cause I can't bare to eddit 3 html files to add the same thing
 
-let Agent = navigator.userAgent.toLowerCase(),
- width = screen.availWidth,
- height = screen.availHeight,
+let Agent = navigator.userAgent.toLowerCase();
+ width = screen.availWidth;
+ height = screen.availHeight;
 userIsOnMobileDevice = checkIfUserIsOnMobileDevice(Agent);
 
 document.addEventListener("DOMContentLoaded", function() {
