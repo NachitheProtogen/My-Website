@@ -1,8 +1,8 @@
 const ctx = myCanvas.getContext("2d");
 
-let userAgent = navigator.userAgent.toLowerCase(),
- width = screen.availWidth,
- height = screen.availHeight,
+let userAgent = navigator.userAgent.toLowerCase();
+ width = screen.availWidth;
+ height = screen.availHeight;
 userIsOnMobileDevice = checkIfUserIsOnMobileDevice(userAgent);
 
 let color = "#000000";
