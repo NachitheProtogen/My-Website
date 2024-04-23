@@ -303,4 +303,4 @@ function checkIfUserIsOnMobileDevice($userAgent) {
        }
     }
     return false;
- }
+}

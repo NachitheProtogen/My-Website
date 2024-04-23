@@ -1,5 +1,10 @@
 //The script that will help me solve all my problems cause I can't bare to eddit 3 html files to add the same thing
 
+let userAgent = navigator.userAgent.toLowerCase(),
+ width = screen.availWidth,
+ height = screen.availHeight,
+userIsOnMobileDevice = checkIfUserIsOnMobileDevice(userAgent);
+
 document.addEventListener("DOMContentLoaded", function() {
 let header = document.createElement("header");
 header.id = "myHeader";
@@ -93,6 +98,15 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onscroll = function () {
       var currentScrollPos = window.scrollY;
 
+      if (userIsOnMobileDevice) {
+        if (prevScrollPos > currentScrollPos) {
+          // Scrolling up
+          header.style.top = "0";
+      } else {
+          // Scrolling down
+          header.style.top = "-160px"; 
+      }  
+      } else if(!userIsOnMobileDevice){
       if (prevScrollPos > currentScrollPos) {
           // Scrolling up
           header.style.top = "0";
@@ -102,5 +116,23 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       prevScrollPos = currentScrollPos;
-  };
+  }};
 });
+
+
+function checkIfUserIsOnMobileDevice($userAgent) {
+  if($userAgent.includes("mobi") || $userAgent.includes("tablet")){
+     return true;
+  }
+  if($userAgent.includes("android")) {
+     if(height > width && width < 800) {
+        // Screen is higher than it’s wide, so we have portrait mode
+        return true;
+     }
+     if(width > height && height < 800) {
+        // Screen is wider than it’s high, so we have landscape mode
+        return true;
+     }
+  }
+  return false;
+}
