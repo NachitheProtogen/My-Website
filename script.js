@@ -8,7 +8,7 @@ let questionsAndAnswers = [
     },
     {
         question: "What is my Character Nachi?",
-        answers: ["Protogen", "a Protogen", "A Protogen", "protogen" ,"a protogen"]
+        answers: ["Protogen", "a Protogen",]
     },
     {
         question: "What programming language is this website written in?",
@@ -42,7 +42,7 @@ let questionsAndAnswers = [
     },
     {
       question: "What is my real name?",
-      answers: ["Chris","Christian","chris","christian"]
+      answers: ["Chris","Christian",]
     },
 ];
 
