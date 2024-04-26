@@ -33,6 +33,7 @@ let colors = [
 ];
 
 let drawnElements = []; // Store drawn elements separately
+let redoElements = []; // Array to store elements for redo
 
 colorpicker.addEventListener("input", (e) => {
     color = colorpicker.value;
@@ -144,8 +145,25 @@ decpic.addEventListener("click", () => {
     drawElements(drawnElements);
 })
 
+undo.addEventListener("click", () => {
+    if (drawnElements.length > 0) {
+        let removedElement = drawnElements.pop();
+        redoElements.push(removedElement);
+        drawElements(drawnElements);
+    }
+})
+
+redo.addEventListener("click", () => {
+    if (redoElements.length > 0) {
+        let restoredElement = redoElements.pop();
+        drawnElements.push(restoredElement);
+        drawElements(drawnElements);
+    }
+})
+
 clear.addEventListener("click", () => {
     drawnElements = [];
+    redoElements = [];
     ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
     piccount = 0
     picsize("+");
@@ -170,6 +188,7 @@ function downloadcanvasimg() {
 
 myCanvas.addEventListener("mousedown", (e) => {
     startPoint = { x: e.offsetX, y: e.offsetY };
+    redoElements = [];
     if (settings[1] === true || settings[4] === true) {
         isDrawing = true;
         if (settings[4] === true) {
@@ -179,6 +198,9 @@ myCanvas.addEventListener("mousedown", (e) => {
     }
     if (settings[2] === true){
         drawnElements.push({ type: settings[2] , points: [startPoint], color: color, thickness: thickness });
+    }
+    if (settings[3] === true){
+        drawnElements.push({ type: settings[3] , points: [startPoint], color: color, thickness: thickness });
     }
 });
 
@@ -206,6 +228,11 @@ myCanvas.addEventListener("mouseup", (e) => {
     if (settings[2] === true) {
         const endPoint = {x: e.offsetX, y: e.offsetY};
         drawnElements.push({ type: "box", start: startPoint, end: endPoint, color: color, thickness: thickness });
+        drawElements(drawnElements);
+    }
+    if (settings[3] === true) {
+        const endPoint = {x: e.offsetX, y: e.offsetY};
+        drawnElements.push({ type: "circle", start: startPoint, end: endPoint, color: color, thickness: thickness });
         drawElements(drawnElements);
     }
 });
@@ -259,7 +286,13 @@ function drawElements(elements) {
             }
         } else if (element.type === "box") {
             ctx.rect(element.start.x, element.start.y, element.end.x - element.start.x, element.end.y - element.start.y);
+        } else if (element.type === "circle") {
+            const centerX = (element.start.x + element.end.x) / 2;
+            const centerY = (element.start.y + element.end.y) / 2;
+            const radius = Math.sqrt(Math.pow(element.end.x - element.start.x, 2) + Math.pow(element.end.y - element.start.y, 2)) / 2;
+            ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
         }
+        
         ctx.lineWidth = element.thickness;
         ctx.strokeStyle = element.color;
         ctx.stroke();
