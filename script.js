@@ -28,7 +28,7 @@ let questionsAndAnswers = [
       "Feb. 3rd",
       "3rd Feb",
       "Feb 3rd",
-      "3/2/24",
+      "3/2/06",
       "03-02",
       "3/2",
       "2/3",
