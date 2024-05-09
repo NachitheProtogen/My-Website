@@ -40,7 +40,7 @@ let questionsAndAnswers = [
       "2-3",]
     },
     {
-      question: "Who is my Boyfriend?",
+      question: "Who is my Partner?",
       answers: ["Snowie","Snowy","Snow snow"]
     },
 ];
