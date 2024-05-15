@@ -3,46 +3,45 @@ let qdiv = document.getElementById("questionDiv");
 
 let questionsAndAnswers = [
     {
-        question: "Who is this website about?",
-        answers: ["Nachi"]
+        question: "What region of Germany am I from?",
+        answers: ["NRW", "Nordrhein-Westfalen", "north rhine westphalia", "north rhine-westphalia"]
     },
     {
-        question: "What is my Character Nachi?",
-        answers: ["Protogen", "a Protogen",]
+        question: "What feture of this website was originally a school project?",
+        answers: ["paint",]
     },
     {
-        question: "What programming language is this website written in?",
-        answers: ["JavaScript", "js"]
+        question: "What is my favorite hobby?",
+        answers: ["Videogames", "Gaming", "games"]
     },
     {
-      question: "When did this website go into 1.0.0?",
-      answers: ["Feb 1, 2024",
-      "February 1, 2024",
-      "1st February 2024",
-      "2024-02-01",
-      "01/02/2024",
-      "02/01/2024",
-      "01 02 2024",
-      "02 01 2024",
-      "1 Feb 2024",
-      "2024年2月1日",
-      "Feb. 1st, 2024",
-      "1st Feb, 2024",
-      "Feb 1st, 2024",
-      "1/2/24",
-      "02-01-24",
-      "1/2/24",
-      "2/1/24",
-      "Feb 1 '24",
-      "Feb-01-24",
-      "1-Feb-24",
-      "1-Feb-2024",
-      "1st Feb '24",
-      "2-1-24",]
+      question: "What is my birthday?",
+      answers: ["Feb 3",
+      "February 3rd",
+      "3rd February",
+      "02-03",
+      "03/02",
+      "02/03",
+      "03 02",
+      "02 03",
+      "3 Feb",
+      "Feb. 3rd",
+      "3rd Feb",
+      "Feb 3rd",
+      "3/2/06",
+      "03-02",
+      "3/2",
+      "2/3",
+      "Feb 3",
+      "Feb-03",
+      "3-Feb",
+      "3-Feb",
+      "3rd Feb",
+      "2-3",]
     },
     {
-      question: "What is my real name?",
-      answers: ["Chris","Christian",]
+      question: "Who is my Partner?",
+      answers: ["Snowie","Snowy","Snow snow"]
     },
 ];
 
